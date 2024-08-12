@@ -7,7 +7,7 @@ ECS_SERVICE="$4"
 ECS_TASK_DEFINITION="$5"
 CONTAINER_NAME="$6"
 
-WORKFLOW_PATH="../../.github/workflows/build_and_deploy_to_aws_ecs.yml"
+WORKFLOW_PATH="../../../.github/workflows/build_and_deploy_to_aws_ecs.yml"
 WORKFLOW_DIR=$(dirname "$WORKFLOW_PATH")
 
 mkdir -p "$WORKFLOW_DIR"
@@ -19,7 +19,7 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   AWS_REGION: $AWS_REGION
