@@ -8,7 +8,7 @@ terraform {
   
   backend "s3" {
   bucket = "tf-state-weather-project"
-  key    = "weather-stg.tfstate"
+  key    = "Mage/weather-stg.tfstate"
   region = "us-east-1"
   encrypt = true
   }
